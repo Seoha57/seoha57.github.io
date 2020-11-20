@@ -78,8 +78,10 @@ section .row img {
 }
 
 footer {
+  clear: both;
   font-size: 12px;
   padding: 20px 0;
+  background-color: #a1a4a8;
 }
 
 footer .col-sm-8 {
@@ -89,9 +91,26 @@ footer .col-sm-8 {
 
 footer ul {
   list-style: none;
+  float: left;
+  margin-right: 30px;
 }
 
 footer li img {
   width: 32px;
   height: 32px;
+}
+
+#footer {
+	clear: both;
+    width: 100%;
+    height: 90px;
+    background-color: #a1a4a8;
+}
+
+#footer .ft_wrap {
+	position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 17px;
+    height: 50px;
 }
