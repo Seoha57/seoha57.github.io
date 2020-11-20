@@ -88,18 +88,12 @@ footer p {
   color: #d9dbdc;
 }
 
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
-}
-
 footer ul {
   list-style: none;
   float: left;
   margin-right: 30px;
 }
 
-footer li img {
-  width: 32px;
-  height: 32px;
+footer li p {
+  color: #d9dbdc;
 }
