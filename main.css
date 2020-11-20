@@ -88,6 +88,11 @@ footer p {
   color: #d9dbdc;
 }
 
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
 footer ul {
   list-style: none;
   float: left;
