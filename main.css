@@ -51,7 +51,7 @@ header p {
   margin: 0;
 }
 
-.main_menu {
+#main_menu {
   position: absolute;
   z-index: 10000;
   width: 100%;
@@ -62,29 +62,29 @@ header p {
   border-bottom: 1px solid #ddd;
 }
 
-.main_menu .main_logo {
+#main_menu .main_logo {
 }
 
-.main_menu .menu_list{
+#main_menu .menu_list{
 	margin_left: 450px;
 	width: 135px;
 	float: left;
 }
 
-.main_menu .menu_list ul{
+#main_menu .menu_list ul{
   list-style: none;
 }
 
-.main_menu .menu_list li {
+#main_menu .menu_list li {
   padding: 20px 0;
 }
 
-.main_menu .menu_list li a {
+#main_menu .menu_list li a {
   font-size:14px; 
   line-height:13px; 
 }
 
-.main_menu .menu_list li a:hover {
+#main_menu .menu_list li a:hover {
 	color:#0770dc;
 }
 
