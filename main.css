@@ -32,6 +32,20 @@ header nav li {
   padding: 20px 0;
 }
 
+header nav li a {
+  isplay: inline-block; 
+  width: 135px; 
+  text-align: center; 
+  padding-bottom: 30px; 
+  font-size: 20px; 
+  font-weight: bold; 
+  color: #333;
+}
+
+header nav li a:hover {
+	color:#0770dc;
+}
+
 header p {
   padding: 0 20px;
   margin: 0;
@@ -64,6 +78,14 @@ header p {
 .main_menu .menu_list li {
   padding: 20px 0;
 }
+
+.main_menu .menu_list li a {
+  font-size:14px; 
+  line-height:13px; 
+}
+
+.main_menu .menu_list li a:hover {
+	color:#0770dc;
 }
 
 .jumbotron {
