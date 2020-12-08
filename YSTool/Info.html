@@ -37,21 +37,13 @@
   <script language="JavaScript" type="text/javascript" src="../js/menu_link.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="../js/MyHeader.js" type="text/javascript" defer></script>
+  <script src="../js/MyFooter.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <!--Top nav bar-->
-  <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-	  <a class="py-2" href="javascript:subLink(1)" aria-label="Product">
-      <img src="../images/yslogo_simbol.png" alt="YStools Logo" width="24" height="24" >
-      </a>
-      <a class="py-2 d-none d-md-inline-block" href="javascript:subLink(2)">기업정보</a>
-      <a class="py-2 d-none d-md-inline-block" href="javascript:subLink(3)">물품정보</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">물품정보</a>
-      <a class="py-2 d-none d-md-inline-block" href="javascript:subLink(5)">주문하기</a>
-	</div>
-  </nav>
+  <myheader-component></myheader-component>
   
   <!--Top sub nav bar-->
   <div class="nav-scroller py-1 mb-2">
@@ -133,54 +125,8 @@
   </div>
 </body>
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      
-      <img src="../images/yslogo.png" alt="YStools Logo" width="77" height="48" >
-      <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Cool stuff</a></li>
-        <li><a class="text-muted" href="#">Random feature</a></li>
-        <li><a class="text-muted" href="#">Team feature</a></li>
-        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-        <li><a class="text-muted" href="#">Another one</a></li>
-        <li><a class="text-muted" href="#">Last time</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Resource</a></li>
-        <li><a class="text-muted" href="#">Resource name</a></li>
-        <li><a class="text-muted" href="#">Another resource</a></li>
-        <li><a class="text-muted" href="#">Final resource</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Business</a></li>
-        <li><a class="text-muted" href="#">Education</a></li>
-        <li><a class="text-muted" href="#">Government</a></li>
-        <li><a class="text-muted" href="#">Gaming</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Team</a></li>
-        <li><a class="text-muted" href="#">Locations</a></li>
-        <li><a class="text-muted" href="#">Privacy</a></li>
-        <li><a class="text-muted" href="#">Terms</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="row-sm-3 text-center text-muted">copyrights&copy;2020 YSTools. all right reserved</p>
-</footer>
+<!--Footer-->
+<myfooter-component></myfooter-component>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
