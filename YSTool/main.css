@@ -6,7 +6,7 @@
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  overflow:hidden;
+  border-bottom: 1px solid #000000;
 }
 .site-header a {
   color: #999;
@@ -17,14 +17,14 @@
   text-decoration: none;
 }
 
-.hidden-menu { 
+/*.hidden-menu { 
   position:absolute; 
   z-index:10000; 
   width:100%; 
   height:242px; 
   overflow:hidden; 
   display:none; 
-  background:#fff; 
+  background:#fff;
   border-top:1px solid #ddd; 
   border-bottom:1px solid #ddd;
 }
@@ -51,7 +51,95 @@
 .hidden-menu .menu_list li a:hover {
   color: #fff;
   text-decoration: none;
+}*/
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 140px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(0, 0, 0, .85);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
 }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #fff;
+}
+
+.product_main {
+  margin-left: 140px; /* Same as the width of the sidebar */
+  overflow: hiddn;
+  padding: 0px 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.product_main table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.product_main table th,td {
+  border: 1px solid black;
+}
+
+.product_main table.a {
+  table-layout: auto;
+  width: 100%; 
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+  background-color: #6691FF;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  max-width: 800px;
+  margin-left: 200px;
+}
+
+.nav-scroller .nav a {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
 
 /*
 #main_menu {
