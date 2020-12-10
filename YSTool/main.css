@@ -17,6 +17,28 @@
   text-decoration: none;
 }
 
+/*.site-footer {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  margin-top: 30px
+}
+
+.site-footer .f-wrap {
+  width: 960px;
+  height: 70px;
+}
+
+.site-footer .f-wrap a {
+  display: inline-block;
+  font-size: 15px
+}*/
+
 /*.hidden-menu { 
   position:absolute; 
   z-index:10000; 
@@ -68,7 +90,7 @@
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 10px 8px 6px 16px;
+  padding: 15px 8px 8px 5px;
   text-decoration: none;
   font-size: 15px;
   color: #818181;
@@ -85,6 +107,14 @@
   overflow: hiddn;
   padding: 0px 10px;
   border-bottom: 2px solid #000000;
+}
+
+.product_main h1 {
+  text-align:center;
+  width:100%;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis; // This is where the magic happens
 }
 
 .product_main table {
