@@ -13,7 +13,7 @@
   -->
   
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -33,18 +33,28 @@
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script language="JavaScript" type="text/javascript" src="../js/jquery_main.js"></script>
-  <script language="JavaScript" type="text/javascript" src="../js/menu_link.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/jquery_main.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/menu_link.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <script src="../js/MyHeader.js" type="text/javascript" defer></script>
-  <script src="../js/MyFooter.js" type="text/javascript" defer></script>
+  <script src="js/MyHeader.js" type="text/javascript" defer></script>
+  <script src="js/MyFooter.js" type="text/javascript" defer></script>
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
   <!--Top nav bar-->
-  <myheader-component></myheader-component>
+  <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+	  <a class="py-2" href="index.html" aria-label="Product">
+      <img src="images/yslogo_simbol.png" alt="YStools Logo" width="24" height="24" >
+      </a>
+      <a class="py-2 d-none d-md-inline-block" href="YSTool/Info.html">기업정보</a>
+      <a class="py-2 d-none d-md-inline-block" href="YSTool/Products.html">물품정보</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">물품정보</a>
+      <a class="py-2 d-none d-md-inline-block" href="YSTool/Checkout.html">주문하기</a>
+	</div>
+  </nav>
 	<!--
     <div class="hidden-menu">
 	  <div class="menu-list">
@@ -57,14 +67,36 @@
 	</div>
 	-->
   
-  <img src="../images/yslogo.png" alt="YStools Logo" width="385" height="246">
+  <img src="images/yslogo.png" alt="YStools Logo" width="385" height="246">
 
 </body>
 
 <!--Footer-->
-<myfooter-component></myfooter-component>
+<footer class="site-footer py-2">
+  <ul>
+    <li>
+      <div class="f-wrap row">
+        <div class="col-sm-3 py-2">
+          <img src="images/yslogo.png" alt="YStools Logo" width="77" height="48">
+          <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+        </div>
+        <div class="col-sm-6 text-muted py-2">
+          <h5>위치</h5>
+		    <a>41556 대구광역시 북구 노원동로6길 2 (노원동2가)3</a>
+        </div>
+        <div class="col-sm-3 text-muted py-2">
+          <h5>대표전화</h5>
+		    <a>053)358-2013~4</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <p class="row-sm-3 text-center text-muted">copyright&copy;2020 YSTools. all rights reserved</p>
+    </li>
+  </ul>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </html>
