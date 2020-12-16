@@ -2,7 +2,7 @@ function subLink(num) {
 	
   var linkurls = new Array;
   
-  linkurls[1] = '../YSTool/index.html';        //main menu
+  linkurls[1] = '../index.html';        //main menu
 										      
   linkurls[2] = '../YSTool/Info.html';         //company info
   linkurls[22] = '../YSTool/ShowMap.html';     //company info

@@ -47,7 +47,7 @@ class MyFooter extends HTMLElement {
             </div>
           </li>
           <li>
-            <p class="row-sm-3 text-center text-muted">copyrights&copy;2020 YSTools. all right reserved</p>
+            <p class="row-sm-3 text-center text-muted">copyright&copy;2020 YSTools. all rights reserved</p>
           </li>
         </ul>
       </footer>
