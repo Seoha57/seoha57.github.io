@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+    <title>회원가입</title>
+	
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script language="JavaScript" type="text/javascript" src="../js/jquery_main.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../js/menu_link.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/register.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="../js/MyHeader.js" type="text/javascript" defer></script>
+  <script src="../js/MyFooter.js" type="text/javascript" defer></script>
+  <script src="../js/Register.js" type="text/javascript" defer></script>
+  <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body class="text-center">
+  <form class="form-register" name="registerform" method="post" enctype="multipart/form-data" action="./register">
+    <img class="mb-4" src="../images/yslogo.png" alt="풀 로고" width="120" height="86">
+    <h1 class="h3 mb-3 font-weight-normal">회원가입</h1>
+	
+    <label for="userId" class="fieldlabel">아이디</label>
+    <input type="text" id="userId" name="userId" class="form-control" maxlength="20" placeholder="ID" required autofocus>
+	
+	<label for="userPw" class="fieldlabel">비밀번호</label>
+    <input type="password" id="userPw" name="userPw" class="form-control" maxlength="20" placeholder="Enter Password" required>
+	<label for="userPwCheck" class="fieldlabel">비밀번호확인</label>
+    <input type="password" id="userPwCheck" name="userPwCheck" class="form-control" maxlength="20" placeholder="Enter Password Again" autocomplete="off">
+	
+	<label for="userName" class="fieldlabel">이름</label>
+    <input type="text" id="userName" name="userName" class="form-control" maxlength="20" placeholder="Enter Name" value="">
+	<label for="userPhone" class="fieldlabel">연락처</label>
+	<input type="tel" id="userPhone" name="userPhone" class="form-control" placeholder="010-0000-0000" value="">
+	<label for="emailaddress" class="fieldlabel">이메일주소</label>
+    <input type="email" id="emailaddress" name="emailaddress" class="form-control" placeholder="example@domain.com" value="">
+		
+        <div class="btnfield">
+            <input type="submit" value="회원가입">
+        </div>
+    </form>
+</body>
+</html>
